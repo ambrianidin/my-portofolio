@@ -1,6 +1,6 @@
-# Nadine Ambriani — Portfolio
+# Portfolio
 
-Personal portfolio site for Nadine Ambriani, a fullstack developer from Bogor, Indonesia. Single page, light theme, built from a Claude Design canvas.
+Personal portfolio site, Single page/
 
 Built with **Next.js 16** (App Router), **React 19**, **TypeScript**, and **Tailwind CSS v4**.
 
@@ -74,7 +74,3 @@ Images and documents go in `public/` and are referenced by raw path (spaces incl
 - **Tokens, not hardcoded colours.** `--background`, `--surface`, `--foreground`, `--muted`, `--border`, `--accent` are exposed to Tailwind through `@theme inline`.
 - **Fonts** via `next/font/google`: Josefin Sans (display), Chivo (sans), Caveat (the script signature in the hero).
 - **Motion degrades.** All three motion pieces honour `prefers-reduced-motion`. Beyond that: the pinned project scroll falls back to a plain stacked list below `md`, and the cursor follower is hidden below `md` and skipped entirely for coarse pointers.
-
-## Next.js version
-
-This is Next.js 16, which changed APIs and conventions from earlier majors. The version's own docs ship with the package at `node_modules/next/dist/docs/` — read those rather than older tutorials when working against its APIs.
