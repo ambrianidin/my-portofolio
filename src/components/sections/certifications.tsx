@@ -45,7 +45,7 @@ export function Certifications() {
                 fit={cert.fit}
                 sizes="(max-width: 768px) 86vw, 460px"
               />
-              <div className="pointer-events-none absolute inset-0 flex flex-col justify-end gap-2.5 bg-gradient-to-t from-[rgba(16,18,20,0.92)] via-[rgba(16,18,20,0.62)] to-transparent p-5 text-[#f6f4ef] opacity-0 transition-opacity duration-300 group-focus-within:opacity-100 group-hover:opacity-100 md:p-7">
+              <div className="pointer-events-none absolute inset-0 flex flex-col justify-end gap-2.5 bg-gradient-to-t from-[rgba(16,18,20,0.92)] via-[rgba(16,18,20,0.62)] to-transparent p-5 text-[#f6f4ef] opacity-0 transition-opacity duration-300 group-focus-within:opacity-100 group-hover:opacity-100 [@media(hover:none)]:opacity-100 md:p-7">
                 <div className="flex items-center gap-2.5 font-sans text-xs text-[rgba(246,244,239,0.72)]">
                   <span className="text-accent">{cert.num}</span>
                   <span>{cert.year}</span>

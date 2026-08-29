@@ -41,7 +41,7 @@ export function SiteNav() {
             <a
               key={link.href}
               href={link.href}
-              className="whitespace-nowrap text-sm text-muted transition-colors hover:text-foreground"
+              className="whitespace-nowrap py-2.5 text-sm text-muted transition-colors hover:text-foreground md:py-0"
             >
               {link.label}
             </a>
