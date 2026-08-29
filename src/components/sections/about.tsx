@@ -26,11 +26,7 @@ export function About() {
           <h2 className="text-[clamp(26px,3.4vw,40px)] font-semibold leading-tight tracking-[-0.025em]">
             {active.heading}
           </h2>
-          <div
-            role="tablist"
-            aria-label="About sections"
-            className="flex items-center gap-1 rounded-full border border-border bg-surface p-1"
-          >
+          <div role="tablist" aria-label="About sections" className="flex items-center gap-1 rounded-full border border-border bg-surface p-1">
             {TABS.map((item) => (
               <button
                 key={item.id}

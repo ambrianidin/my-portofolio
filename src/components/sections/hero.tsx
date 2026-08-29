@@ -1,7 +1,6 @@
 export function Hero() {
   return (
     <section className="relative overflow-hidden px-6 pb-10 pt-14 sm:px-10 md:px-16 md:pb-14 md:pt-24">
-      {/* flowing lines + glow decoration */}
       <svg
         aria-hidden
         viewBox="0 0 1200 600"
@@ -33,18 +32,9 @@ export function Hero() {
           strokeWidth="1.2"
         />
       </svg>
-      <div
-        aria-hidden
-        className="pointer-events-none absolute -right-[6%] -top-[14%] aspect-square w-[clamp(280px,42vw,620px)] rounded-full bg-[radial-gradient(circle_at_35%_35%,color-mix(in_oklab,var(--accent)_34%,transparent),transparent_68%)] blur-xl"
-      />
-      <div
-        aria-hidden
-        className="pointer-events-none absolute -bottom-[24%] -left-[10%] aspect-square w-[clamp(240px,34vw,520px)] rounded-full bg-[radial-gradient(circle_at_60%_40%,color-mix(in_oklab,var(--foreground)_12%,transparent),transparent_70%)] blur-2xl"
-      />
-      <div
-        aria-hidden
-        className="pointer-events-none absolute bottom-[8%] right-[clamp(4%,10vw,18%)] h-px w-[clamp(120px,16vw,240px)] bg-[linear-gradient(to_right,transparent,color-mix(in_oklab,var(--accent)_55%,transparent),transparent)]"
-      />
+      <div aria-hidden className="pointer-events-none absolute -right-[6%] -top-[14%] aspect-square w-[clamp(280px,42vw,620px)] rounded-full bg-[radial-gradient(circle_at_35%_35%,color-mix(in_oklab,var(--accent)_34%,transparent),transparent_68%)] blur-xl"/>
+      <div aria-hidden className="pointer-events-none absolute -bottom-[24%] -left-[10%] aspect-square w-[clamp(240px,34vw,520px)] rounded-full bg-[radial-gradient(circle_at_60%_40%,color-mix(in_oklab,var(--foreground)_12%,transparent),transparent_70%)] blur-2xl"/>
+      <div aria-hidden className="pointer-events-none absolute bottom-[8%] right-[clamp(4%,10vw,18%)] h-px w-[clamp(120px,16vw,240px)] bg-[linear-gradient(to_right,transparent,color-mix(in_oklab,var(--accent)_55%,transparent),transparent)]"/>
 
       <div className="relative mx-auto max-w-[1180px]">
         <h1 className="m-0 font-display text-[clamp(52px,13.5vw,210px)] font-semibold uppercase leading-[0.92] tracking-[-0.045em]">
@@ -55,10 +45,7 @@ export function Hero() {
         </h1>
       </div>
 
-      <a
-        href="#about"
-        className="relative mx-auto mt-10 flex w-fit flex-col items-center gap-2 text-[11px] uppercase tracking-[0.18em] text-muted transition-colors hover:text-accent md:mt-12"
-      >
+      <a href="#about" className="relative mx-auto mt-10 flex w-fit flex-col items-center gap-2 text-[11px] uppercase tracking-[0.18em] text-muted transition-colors hover:text-accent md:mt-12">
         <span>Scroll for more</span>
         <span className="block h-7 w-px origin-top animate-scroll-hint bg-gradient-to-b from-border to-transparent motion-reduce:animate-none md:h-11" />
       </a>

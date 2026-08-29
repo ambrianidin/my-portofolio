@@ -1,6 +1,3 @@
-// Site content. Hardcoded here (design.md §9 #2 — no CMS/MDX for now).
-// Swap the copy freely; the section components read only from these arrays.
-
 export type SkillGroup = {
   num: string;
   label: string;
@@ -13,7 +10,6 @@ export type Experience = {
   location: string;
   title: string;
   desc: string;
-  /** Photo shown beside the text. Raw path under /public. Optional. */
   image?: string;
 };
 
@@ -24,12 +20,8 @@ export type Certification = {
   title: string;
   blurb: string;
   tags: string[];
-  /** Photo shown on the card. Omit to fall back to a neutral placeholder —
-   *  use that when the scan carries data you would rather not put on display. */
   image?: string;
-  /** Set for portrait scans so the whole certificate stays visible. */
   fit?: "cover" | "contain";
-  /** What the card opens — the credential page, or the document itself. */
   href: string;
 };
 
@@ -207,8 +199,6 @@ export const certifications: Certification[] = [
     blurb:
       "National competency certification: KKNI Level III for Information Systems, Networks and Applications. Issued April 2026, valid three years.",
     tags: ["Computer Network", "KKNI Level III", "BNSP"],
-    // No preview: the scan shows the certificate and registration numbers.
-    // Drop a logo at /bnsp-logo.png and set `image` to it to show one.
     href: "/BNSP CERTIFICATION.pdf",
   },
 ];

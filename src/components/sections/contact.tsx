@@ -9,10 +9,7 @@ export function Contact() {
           Got a system that needs building?
         </h2>
 
-        <a
-          href={`mailto:${contact.email}`}
-          className="mt-7 inline-flex items-center gap-3 border-b border-border pb-2 font-sans text-[clamp(20px,3.4vw,42px)] tracking-[-0.02em] text-foreground transition-colors hover:border-accent hover:text-accent sm:gap-5 md:mt-12"
-        >
+        <a href={`mailto:${contact.email}`} className="mt-7 inline-flex items-center gap-3 border-b border-border pb-2 font-sans text-[clamp(20px,3.4vw,42px)] tracking-[-0.02em] text-foreground transition-colors hover:border-accent hover:text-accent sm:gap-5 md:mt-12">
           {contact.email}
           <span className="text-[0.5em] text-muted">↗</span>
         </a>
@@ -22,20 +19,10 @@ export function Contact() {
             <span className="font-sans text-[11px] uppercase tracking-[0.1em] text-muted">
               Social
             </span>
-            <a
-              href={contact.linkedin}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-fit text-[17px] text-foreground transition-colors hover:text-accent"
-            >
+            <a href={contact.linkedin} target="_blank" rel="noopener noreferrer" className="w-fit text-[17px] text-foreground transition-colors hover:text-accent">
               LinkedIn ↗
             </a>
-            <a
-              href={contact.github}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-fit text-[17px] text-foreground transition-colors hover:text-accent"
-            >
+            <a href={contact.github} target="_blank" rel="noopener noreferrer" className="w-fit text-[17px] text-foreground transition-colors hover:text-accent">
               GitHub ↗
             </a>
           </div>
@@ -44,10 +31,7 @@ export function Contact() {
             <span className="font-sans text-[11px] uppercase tracking-[0.1em] text-muted">
               Email
             </span>
-            <a
-              href={`mailto:${contact.email}?subject=Project%20inquiry&body=Hi%20Nadine%2C%0A%0A`}
-              className="inline-flex w-fit items-center gap-2.5 rounded-full border border-border px-6 py-3 text-sm font-medium text-foreground transition-colors hover:border-accent hover:text-accent"
-            >
+            <a href={`mailto:${contact.email}?subject=Project%20inquiry&body=Hi%20Nadine%2C%0A%0A`} className="inline-flex w-fit items-center gap-2.5 rounded-full border border-border px-6 py-3 text-sm font-medium text-foreground transition-colors hover:border-accent hover:text-accent">
               Write an email ↗
             </a>
           </div>
